@@ -1,0 +1,37 @@
+<div class="block">
+  <div class="outer">
+  <table class="inner">
+    <tr>
+      <td>
+        <canvas class="fake_map" width="200px" height="100px"></canvas>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td>
+              Pickup : {{tripDetail.pickup}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Drop : {{tripDetail.destination}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Time : {{tripDetail.booking_timestamp}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <rating [(ngModel)]="tripDetail.rating"
+                      [max]="5">
+              </rating>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  </div>
+</div>

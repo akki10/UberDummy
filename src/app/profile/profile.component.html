@@ -1,0 +1,41 @@
+<form [formGroup]="profileForm">
+  <table>
+    <tr>
+      <td>
+        <div class="photo-icon">
+          <img src={{profileInfo.dp}} />
+        </div><br/>
+        <div>
+          {{profileInfo.name}}
+        </div>
+      </td>
+      <td>
+        <table class="form-group">
+          <tr>
+            <!--<td><label for="email">Email:</label></td>-->
+            <td><md-input placeholder="Email" ng-readonly="true" align="left" formControlName="email" id = "email"></md-input></td>
+            <!--<td><input type="email" class="form-control" id="email" formControlName="email"></td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+            <td><md-input placeholder="Language" ng-readonly="true" align="left" id="lng" formControlName="language"></md-input></td>
+          </tr>
+          <tr>
+            <td><md-input placeholder="Location" ng-readonly="true" align="left" id="loc" formControlName="location"></md-input></td>
+          <!--</tr>-->
+          <!--<tr>-->
+            <td><md-input placeholder="Mobile" ng-readonly="true" align="left" id="mbl" formControlName="mobile"></md-input></td>
+          </tr>
+          <tr>
+            <td><md-input placeholder="Invite Code" ng-readonly="true" align="left" id="inv" formControlName="invite"></md-input></td>
+            <td></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button type="submit" md-raised-button color="primary">Save+</button>
+      </td>
+    </tr>
+  </table>
+</form>

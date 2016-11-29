@@ -1,0 +1,21 @@
+
+.header-bar{
+  width:70%;
+  display: block;
+  margin:0 auto;
+  margin-top:2px;
+}
+
+.container_outer{
+  margin-top:20px;
+  width:100%;
+  text-align:center;
+}
+
+.container_inner{
+  display:inline-block;
+  *display:inline;/* IE*/
+  *zoom:1;/* IE*/
+  overflow:hidden;
+  text-align:left;
+}

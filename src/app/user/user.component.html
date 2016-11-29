@@ -1,0 +1,35 @@
+
+<md-card class="header-bar" >
+  <md-tab-group [selectedIndex]="0">
+    <md-tab>
+      <template md-tab-label>
+        Book Cabs
+      </template>
+      <div class="container_outer">
+        <div class="container_inner">
+          <ud-cabs></ud-cabs>
+        </div>
+      </div>
+    </md-tab>
+    <md-tab>
+      <template md-tab-label>
+        Trips
+      </template>
+      <div class="container_outer">
+        <div class="container_inner">
+          <ud-mytrips></ud-mytrips>
+        </div>
+      </div>
+    </md-tab>
+    <md-tab>
+      <template md-tab-label>
+        Profile
+      </template>
+      <div class="container_outer">
+        <div class="container_inner">
+          <ud-profile></ud-profile>
+        </div>
+      </div>
+    </md-tab>
+  </md-tab-group>
+</md-card>

@@ -1,0 +1,40 @@
+<table>
+  <tr>
+    <td>
+      <form [formGroup]="bookCabForm">
+        <table>
+          <tr>
+            <td>
+              <md-input placeholder="Pickup Location" ng-readonly="true" align="left" formControlName="pickup" (keydown)="autocomplete($event)" id = "pickup"></md-input>
+              <button md-icon-button disabled (click)="setSource()"><md-icon class="md-18">my_location</md-icon></button><br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <md-icon class="md-24 upArrow" >arrow_upward</md-icon><md-icon class="md-24 downArrow">arrow_downward</md-icon>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <md-input placeholder="Drop Location" align="left" formControlName="drop" (keydown)="autocomplete($event)" id="drop"></md-input>
+              <button md-icon-button [disabled]="!bookCabForm.valid"><md-icon class="md-24">arrow_forward</md-icon></button>
+            </td>
+          </tr>
+          <tr *ngIf="isSrcSet && isDesSet">
+            <td>
+              <div id="fare">
+                Fare Estimate: Rs.{{estimated_cost}}
+              </div>
+            </td>
+          </tr>
+      </table>
+      </form>
+    </td>
+    <td style="width: 70%;">
+      <sebm-google-map disableDoubleClickZoom=true (centerChange)="onCenterChange($event)" [latitude]="mapCenter.lat" [longitude]="mapCenter.lng" [zoom]="zoom_level">
+        <sebm-google-map-marker [latitude]="src_lat" [longitude]="src_lng"></sebm-google-map-marker>
+        <sebm-google-map-marker [latitude]="des_lat" [longitude]="des_lng"></sebm-google-map-marker>
+      </sebm-google-map>
+    </td>
+  </tr>
+</table>

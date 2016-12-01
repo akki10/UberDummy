@@ -4,11 +4,13 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "start": "ng serve",
+    // "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
-    "test": "ng test",
+    // "test": "ng test",
     "pree2e": "webdriver-manager update",
-    "e2e": "protractor"
+    "e2e": "protractor",
+    "test": "grunt test",
+    "postinstall": "bower install"
   },
   "private": true,
   "dependencies": {
@@ -29,7 +31,9 @@
     "ng2-rating": "0.0.6",
     "rxjs": "5.0.0-beta.12",
     "ts-helpers": "^1.1.1",
-    "zone.js": "^0.6.23"
+    "zone.js": "^0.6.23",
+    "bower": "1.7.1",
+    "express": "4.13.3"
   },
   "devDependencies": {
     "@angular/compiler-cli": "2.2.1",
@@ -49,5 +53,6 @@
     "tslint": "3.13.0",
     "typescript": "~2.0.3",
     "webdriver-manager": "10.2.5"
-  }
+  },
+  "cacheDirectories": ["node_modules"]
 }

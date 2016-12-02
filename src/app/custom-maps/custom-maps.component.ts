@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {FormBuilder, FormGroup, Validators, FormControl} from "@angular/forms";
-import any = jasmine.any;
+//import any = jasmine.any;
 import {MapsAPILoader} from "angular2-google-maps/core";
 import {validateConfig} from "@angular/router/src/config";
 

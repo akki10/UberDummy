@@ -2,7 +2,7 @@ table{
   border: 0.2px;
 }
 .dot1{
-  background-image: url("../../assets/img/dots.png");
+  background-image: url("assets/img/dots.png");
   background-repeat: repeat;
   padding: 100px;
 }
@@ -11,7 +11,7 @@ table{
   padding-left: 0px;
 }
 #div5{
-  background-image: url("../../assets/img/white_dots.png");
+  background-image: url("assets/img/white_dots.png");
   background-size: 500px auto;
   background-position-x: 50px;
   background-repeat: no-repeat;

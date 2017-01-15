@@ -43,7 +43,7 @@ import { UserComponent } from './user/user.component';
       apiKey: 'AIzaSyCb3dFx8D7ZrgsFlyzrDkVwuGT_TxMR3mU',
       libraries: ['places']
     }),
-    RatingModule,
+    // RatingModule,
     BrowserModule,
     FormsModule,
     HttpModule

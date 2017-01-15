@@ -10,7 +10,6 @@ import {Component, Input, ElementRef, AfterViewChecked} from '@angular/core';
   -ms-animation: height 1s; /* Internet Explorer */
   -o-animation: height 1s; /* Opera < 12.1 */
   animation: height 1s;
-  background-color: ;
 }
 @keyframes height {
   from { height:0px; }
